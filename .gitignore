@@ -1,0 +1,40 @@
+# Build trees and local CMake configuration.
+/build*/
+/cmake-build-*/
+/CMakeFiles/
+/CMakeCache.txt
+/compile_commands.json
+/CMakeUserPresets.json
+*.o
+*.a
+*.so
+*.so.*
+*.log
+
+# SDKs, model weights and conversion intermediates are supplied separately.
+/sdk/
+/models/
+/model/
+*.rknn
+*.onnx
+*.pt
+*.pth
+
+# Generated recognition results and raw input captures.
+/output/
+/outputs/
+/results/
+/result.jpg
+/result.png
+/output.jpg
+/output.png
+*.nv12
+*.yuv
+
+# Machine-specific settings.
+/.vscode/
+/.idea/
+/config.local.*
+/*.local.cmake
+__pycache__/
+*.pyc
